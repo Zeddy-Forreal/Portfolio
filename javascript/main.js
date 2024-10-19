@@ -97,7 +97,7 @@ links.forEach((link)=>{
         link.nextElementSibling.classList.remove("hovered")
     }
 })
-document.querySelector(".talk").onclick = ()=>{nav_buttons[4].click()}
+
 
 function disableAll(arr,ele){
     arr.forEach((elem)=>{
@@ -112,16 +112,15 @@ function disableAll(arr,ele){
 mode.onclick = ()=>{
 
     if(mode.classList.contains("dark")){
-        document.documentElement.style.setProperty('--background', '#bd86ff');
-        document.documentElement.style.setProperty('--background2', '#c4a0ff');
-        document.documentElement.style.setProperty('--background3', '#b57dff');
-        document.documentElement.style.setProperty('--text', '#2b004e');
-        document.documentElement.style.setProperty('--text2', '#e09aff');
-        document.documentElement.style.setProperty('--tryout', '#f4e1ff');
-        document.documentElement.style.setProperty('--main_color', '#ffffff');
+        document.documentElement.style.setProperty('--background', '#1d1c18');
+        document.documentElement.style.setProperty('--background2', '#2f2f22');
+        document.documentElement.style.setProperty('--background3', '#24221c');
+        document.documentElement.style.setProperty('--text', '#ffffff');
+        document.documentElement.style.setProperty('--text2', '#ffd7a3');
+        document.documentElement.style.setProperty('--main_color', '#ee9600');
+        document.documentElement.style.setProperty('--tryout', '#ffffbe');
         mode.classList.remove("dark")
         mode.classList.add("light")
-        mode.innerHTML = `<i class="fa-solid fa-moon"></i>`
     }else{
         document.documentElement.style.setProperty('--background', '#1c181d');
         document.documentElement.style.setProperty('--background2', '#25222f');
@@ -132,7 +131,6 @@ mode.onclick = ()=>{
         document.documentElement.style.setProperty('--tryout', '#e4c5ff');
         mode.classList.remove("light")
         mode.classList.add("dark")
-        mode.innerHTML = `<i class="fa-solid fa-sun"></i>`
     }
 }
 scrolls.forEach((but)=>{
