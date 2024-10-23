@@ -86,7 +86,10 @@ inputs.forEach((inp)=>{
 })
 
 
+document.querySelector(".talkin").onclick = ()=>{
 
+    links[4].click()
+}
 links.forEach((link)=>{
     link.onmouseenter =()=>{
         link.previousElementSibling.classList.add("hovered")
