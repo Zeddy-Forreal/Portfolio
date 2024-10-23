@@ -643,6 +643,115 @@ main .skills .skill .chart span{
 .projects .title .langs{
     font-size: var(--xsmall_font);
 }
+
+.about > section {
+    background-color: var(--background3);
+    padding: 15px;
+    gap: 10px;
+}
+
+.about > section .one{
+
+    height: 100%;
+    aspect-ratio: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.about > section .one .img{
+    background-image: url(../images/pfp2.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: 0 0 25px var(--main_color) inset;
+    filter: brightness(1);
+}
+.about > section .one .img:hover{
+    box-shadow: 0 0 25px var(--main_color) inset, 0 0 50px var(--text2) inset;
+    filter: brightness(1.2);
+}
+.about .one:before,.about .one:after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-color: var(--text2);
+    box-shadow: 0 0 25px var(--main_color), 0 0 15px var(--text2);
+    transition: 0.3s;
+
+}
+
+.about .one:before{
+    bottom: -2px;
+    left: -2px;
+    border-left: 2px solid var(--tryout);
+    border-bottom: 2px solid var(--tryout);
+}
+.about .one:after{
+    top: -2px;
+    right: -2px;
+    border-right: 2px solid var(--tryout);
+    border-top: 2px solid var(--tryout);
+}
+.about > section .two{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+}
+.about > section .two .words{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+.about > section .two .words > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.about > section .two .words > div > div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.about > section .two .words > div > div header{
+    font-weight: 800;
+}
+.about > section .two h6{
+    font-size: var(--xbig_font);
+
+}
+.about > section .two h6::first-letter{
+    color: var(--main_color);
+    text-shadow: 0 0 25px, 0 0 50px, 0 0 75px;
+
+    font-size: var(--xxbig_font);
+}
+.about > section .two h5{
+    font-size: var(--big_font);
+
+}
+.about > section .two h1{
+    font-size: var(--small_font);
+    font-weight: 100;
+}
+.about > section .two h1 a{
+    color: var(--main_color);
+    font-size: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
 @keyframes loading {
     from{
         transform: translateX(30px);
