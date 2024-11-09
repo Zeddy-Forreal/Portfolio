@@ -129,9 +129,9 @@ mode.onclick = ()=>{
         document.documentElement.style.setProperty('--background2', '#25222f');
         document.documentElement.style.setProperty('--background3', '#221c24');
         document.documentElement.style.setProperty('--text', '#ffffff');
-        document.documentElement.style.setProperty('--text2', '#e3a3ff');
-        document.documentElement.style.setProperty('--main_color', '#ad6bff');
-        document.documentElement.style.setProperty('--tryout', '#e4c5ff');
+        document.documentElement.style.setProperty('--text2', '#c2fffe');
+        document.documentElement.style.setProperty('--main_color', '#65ffff');
+        document.documentElement.style.setProperty('--tryout', '#c5fffe');
         mode.classList.remove("light")
         mode.classList.add("dark")
     }
