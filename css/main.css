@@ -8,9 +8,9 @@
     --background2: #25222f;
     --background3: #221c24;
     --text: #ffffff;
-    --text2: #e3a3ff;
-    --main_color: #ad6bff;
-    --tryout: #e4c5ff;
+    --text2: #c2fffe;
+    --main_color: #65ffff;
+    --tryout: #c5fffe;
     --xxxbig_font: 65px;
     --xxbig_font: 45px;
     --xbig_font: 35px;
@@ -112,6 +112,7 @@ button{
 }
 ::selection{
     background-color:var(--main_color) ;
+    color: black;
 }
 body{
     display: flex;
@@ -250,15 +251,19 @@ main .home .two{
     animation-duration: 4s;
 
 }
-main .home .two img{
+main .home .two .img{
     width: 400px;
+    background-image: url(../images/pfp3.jpg);
+    height: 400px;
     border-radius: 50px 100px;
     box-shadow: 0 0 195px 40px var(--main_color), 0 0 10px 1px white,5px 7px var(--main_color),-5px -7px var(--main_color);
     border: 2px solid var(--tryout);
     filter: brightness(1.2);
+    background-size: cover;
+
 }
 
-main .home .two img:hover{
+main .home .two .img:hover{
     box-shadow: 0 0 395px 95px var(--main_color), 0 0 30px 1px var(--tryout),5px 7px var(--main_color),-5px -7px var(--main_color);
     filter: brightness(1.3);
 }
@@ -291,6 +296,7 @@ main .home .one header p::first-letter{
     font-size: larger;
     
 }
+
 
 main .home .one button{
     align-self: center;
